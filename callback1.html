@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function higherOrderrfunction (callback) {
+                 callback ();  // You need to declare that callback is a function 
+        }
+
+        function executionCallback () {
+            console.log ("callback executed") 
+        }
+        higherOrderrfunction(executionCallback)  //here the esecond function is passed as an argument to the first function
+    </script>
+</body>
+</html>
